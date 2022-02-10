@@ -28,7 +28,7 @@ def srednie_gender(dataset: dict) -> dict:
         #suma dla 1go dnia
         srednie_K_M["pierwszy_dzien"]["M"] += mezczyzna["total_UPDRS"][0]
         #suma dla ostatniego dnia
-        srednie_K_M["ostatni_dzien"]["M"] += mezczyzna["total_UPDRS"][0]
+        srednie_K_M["ostatni_dzien"]["M"] += mezczyzna["total_UPDRS"][-1]
         #suma dla calego okresu badania
         srednie_K_M["pelen_okres"]["M"] += sum(mezczyzna["total_UPDRS"]) / len(mezczyzna["total_UPDRS"])
     #odpowiednie srednie:
